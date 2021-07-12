@@ -20,9 +20,16 @@
         <java.version>1.8</java.version>
         <mybatis-plus.version>3.3.1</mybatis-plus.version>
         <guava.version>30.1.1-jre</guava.version>
+        <apache-compress.version>1.20</apache-compress.version>
+        <common.io.version>2.10.0</common.io.version>
     </properties>
 
     <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
 
         <!--mybatis-plus 包含 mybatis-spring-->
         <dependency>
@@ -44,6 +51,26 @@
             <scope>compile</scope>
         </dependency>
 
+        <!--apache 压缩包操作-->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-compress</artifactId>
+            <version>${apache-compress.version}</version>
+        </dependency>
+
+        <!--apache io操作工具类-->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${common.io.version}</version>
+        </dependency>
+
+        <!--knife文档-->
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-spring-boot-starter</artifactId>
+            <version>3.0.2</version>
+        </dependency>
 
     </dependencies>
 
