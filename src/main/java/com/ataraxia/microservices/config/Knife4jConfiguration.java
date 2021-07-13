@@ -20,8 +20,8 @@ public class Knife4jConfiguration {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("微服务【用户模块】")
-                .description("用户模块文档")
+                .title("微服务")
+                .description("文档内容")
                 .termsOfServiceUrl("tps://github.com/lilong19970214")
                 .contact(new Contact("ataraxia", "https://github.com/lilong19970214", "19970214"))
                 .version("1.0")
@@ -36,7 +36,7 @@ public class Knife4jConfiguration {
                 //.groupName("1.0版本")
                 .select()
                 //指定controller（接口）扫描的包路径
-                .apis(RequestHandlerSelectors.basePackage("com.ataraxia.microservices.controller"))
+                .apis(RequestHandlerSelectors.basePackage("org.springframework.security.oauth2.provider.endpoint"))
                 .paths(PathSelectors.any())
                 .build();
     }
